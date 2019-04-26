@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Led Light Network Setup</title>
+        <style>
+            body { background-color: #cccccc; font-family: Arial, Helvetica, Sans-Serif; Color: #000088; }
+            </style>
+    </head>
+    <body>
+        <h1>ESP8266 Serial Passthrough Configuration</h1>
+        <form action="setup">
+            <br>Access Points:
+            <select name="ap">
+                <option value="0">AP 1</option>
+                <option value="1">AP 2</option>
+             </select>
+            <br>Password:
+            <input type="text" name="pw">
+                <br><br>
+                <br>City:
+                <select name="city">
+                    <option value="0">Hamburg</option>
+                    <option value="0">Los Angeles</option>
+                </select>
+                <br>Brightness Day [%%]:
+                <input name="bday" type="number" min="005" max="100" required placeholder="80">
+                <br><br>
+                <br>Brightness Night [%%]:
+                <input name="bnight" type="number" min="005" max="100" required placeholder="15">
+                <br><br>
+                <br>Time Server Update Interval [min]:
+                <input name="ntpupd" type="number" min="0001" max="1440" required placeholder="10">
+                <br><br>
+                <input type="submit" value="Save">
+        </form>
+    </body>
+    </html>
